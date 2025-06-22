@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+
+@theme {
+ --font-sans: 'Sora', 'sans-serif';
+ --color-gray-text: #7A7A7A;
+}
+
+body {
+  @apply font-sans;
+}

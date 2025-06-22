@@ -1,7 +1,32 @@
-import React from 'react'
+import React from "react";
+import { Link, NavLink } from "react-router";
 
 export const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
-}
+    <nav className="container mx-auto py-4 flex justify-between  items-center   ">
+      <ul className="space-x-5 text-base flex">
+        <li>
+          <Link to="">Home</Link>
+        </li>
+        <li>
+          <Link to="">Chart (0)</Link>
+        </li>
+        <li>
+          <Link to="">Shop All</Link>
+        </li>
+      </ul>
+      <h1 className="text-4xl font-semibold">Arliva</h1>
+      <ul className="space-x-5 text-base flex">
+        <li>
+          <Link to="">Contact Us</Link>
+        </li>
+        <li>
+          <Link to="">Search</Link>
+        </li>
+        <li>
+          <Link to="">Sign In</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
