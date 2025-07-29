@@ -3,8 +3,8 @@ import { Link, NavLink } from "react-router";
 
 export const Navbar = () => {
   return (
-    <nav className="container mx-auto py-4 flex justify-between  items-center   ">
-      <ul className="space-x-5 text-base flex">
+    <nav className="w-full  px-16 py-4 flex justify-between  items-center   ">
+      <ul className="flex space-x-5 text-base ">
         <li>
           <Link to="">Home</Link>
         </li>
@@ -16,7 +16,7 @@ export const Navbar = () => {
         </li>
       </ul>
       <h1 className="text-4xl font-semibold">Arliva</h1>
-      <ul className="space-x-5 text-base flex">
+      <ul className="flex space-x-5 text-base ">
         <li>
           <Link to="">Contact Us</Link>
         </li>

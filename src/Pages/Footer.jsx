@@ -4,9 +4,9 @@ import link1 from "../assets/Link1.png";
 import link2 from "../assets/Link2.png";
 import link3 from "../assets/Link3.png";
 import link4 from "../assets/Link4.png";
-export default function Footer() {
+export  const Footer = () => {
   return (
-    <footer className="container mx-auto py-6">
+    <footer className="w-full mx-auto px-16 py-6">
       <div className="flex justify-between items-start  ">
 
        {/* section Company */}
@@ -44,17 +44,17 @@ export default function Footer() {
         {/* section newsletter */}
         <section className="space-y-3">
           <h3>Newsletter</h3>
-          <p className="text-gray-text">
+          <div className="text-gray-text">
             Subscribe to receive updates, access
             <p>to exclusive deals, and more.</p>
-          </p>
+          </div>
           <form className="space-y-3">
             <input
               type="text"
               placeholder="Email address"
-              className="border text-black text-sm py-2 pl-3 w-full"
+              className="py-2 pl-3 w-full text-sm border text-black  "
             />
-            <button className="bg-black text-white py-2 text-xs px-4">
+            <button className="py-2  px-4 text-xs text-white  bg-black ">
               Subscribe
             </button>
           </form>
@@ -62,7 +62,7 @@ export default function Footer() {
       </div>
       
       {/* Section sosmed */}
-      <section className="flex items-center justify-between w-1/2 mt-6">
+      <section className="w-1/2 mt-6 flex items-center justify-between ">
         <h3 className="text-sm">@ 2025 Arliva</h3>
         <ul className="flex space-x-3">
           <li>

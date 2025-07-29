@@ -1,12 +1,13 @@
 import React from 'react'
 import { Navbar } from './Navbar'
-import Footer from './Footer'
+import { Footer } from './Footer'
 
-export default function Layouts() {
+export const Layouts = ({children}) => {
   return (
-    <section className='container mx-auto flex-col h-screen'>
-     <Navbar/>
-     <Footer/>
-    </section>
+    <div>
+    <Navbar/>
+    <main className='w-full space-y-24 flex-col items-center min-h-screen'>{children}</main>
+    <Footer/>
+    </div>
   )
 }
