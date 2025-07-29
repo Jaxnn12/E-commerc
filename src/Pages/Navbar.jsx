@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router";
 
 export const Navbar = () => {
   return (
-    <nav className="w-full  px-16 py-4 flex justify-between  items-center   ">
+    <nav className="w-full  px-4 md:px-16 py-4 flex justify-between  items-center   ">
       <ul className="flex space-x-5 text-base ">
         <li>
           <Link to="">Home</Link>

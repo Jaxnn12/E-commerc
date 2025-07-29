@@ -6,7 +6,7 @@ import link3 from "../assets/Link3.png";
 import link4 from "../assets/Link4.png";
 export  const Footer = () => {
   return (
-    <footer className="w-full mx-auto px-16 py-6">
+    <footer className="w-full mx-auto px-4 md:px-16 py-6">
       <div className="flex justify-between items-start  ">
 
        {/* section Company */}
