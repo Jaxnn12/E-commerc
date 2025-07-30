@@ -18,7 +18,7 @@ export const Navbar = () => {
       <h1 className="text-4xl font-semibold">Arliva</h1>
       <ul className="flex space-x-5 text-base ">
         <li>
-          <Link to="">Contact Us</Link>
+          <Link to="/ContactUs">Contact Us</Link>
         </li>
         <li>
           <Link to="">Search</Link>
