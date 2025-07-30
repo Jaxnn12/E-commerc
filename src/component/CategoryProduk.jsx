@@ -73,10 +73,11 @@ export const CategoryProduk = () => {
   ];
   return (
     <Layouts>
-      <main className="flex items-start space-x-4 px-4 md:px-16 py-8">
+      <div className="flex items-start space-x-4 px-4 md:px-16 py-8">
+        {/* Sidebar */}
         <section className="w-96  border-gray-line border-r">
           {/* <!-- Breadcrumb --> */}
-          <nav aria-label="Breadcrumb" class="text-xs text-gray-text mb-3">
+          <nav aria-label="Breadcrumb" className="text-xs text-gray-text mb-3">
             <ol className="flex items-center space-x-0">
               <li>
                 <a href="/">Home</a>
@@ -110,7 +111,7 @@ export const CategoryProduk = () => {
               {/* <!-- Category Filter --> */}
               <section className="w-full  space-y-2 text-sm">
                 {Category.map((item) => (
-                  <details className="group">
+                  <details key={item} className="group">
                     <summary className="py-1.5 flex items-center justify-between border-t border-gray-line cursor-pointer ">
                       {item}
                       <img
@@ -121,11 +122,11 @@ export const CategoryProduk = () => {
                     </summary>
                     <div className="mt-4 space-y-1 border border-gray-line rounded-lg">
                       {CategoryProduk.map((label) => (
-                        <label className="p-2 space-x-2 flex items-center border-b  border-gray-line">
+                        <label key={label} className="p-2 space-x-2 flex items-center border-b  border-gray-line cursor-pointer">
                           <input
                             type="radio"
                             name="kategori"
-                            checked
+                            defaultChecked
                             className="w-5 h-5 peer-sr-only rounded-full border border-gray-line"
                           />
                           <span>{label}</span>
@@ -145,12 +146,12 @@ export const CategoryProduk = () => {
         </section>
 
         {/* <!-- Main Content --> */}
-        <section class="w-full lg:w-3/4">
+        <section className="w-full lg:w-3/4">
           {/* <!-- Filter Bar --> */}
-          <div class="space-x-1 flex  items-center mb-4 text-sm text-gray-600">
+          <div className="space-x-1 flex  items-center mb-4 text-sm text-gray-600">
             <img src={arrowfilter} alt="" className="" />
-            <button class="underline"> Hide filters</button>
-            <span>| 5 Items</span>
+            <button className="underline">Hide filters</button>
+            <span>| {CategoryProduk.length} Items</span>
           </div>
 
           {/* <!-- Tag / Breadcrumb kategori --> */}
@@ -163,9 +164,8 @@ export const CategoryProduk = () => {
           {/* <!-- Product Grid --> */}
           <div className=" w-full grid grid-cols-3 gap-4">
             {/* <!-- Product Card --> */}
-
             {ProdukBestseller.map((item) => (
-              <div className=" max-w-80 min-w-72 px-6 py-4 space-y-3 flex flex-col items-center bg-bg-card  rounded-lg shrink-0 ">
+              <div key={item.id} className=" max-w-80 min-w-72 px-6 py-4 space-y-3 flex flex-col items-center bg-bg-card  rounded-lg shrink-0  ">
                 <div className=" w-full flex justify-between items-center">
                   <div className="px-2.5 py-2.5 bg-white rounded-3xl shadow-md">
                     <img src={love} alt="Favorite" className=" " />
@@ -193,7 +193,7 @@ export const CategoryProduk = () => {
             {/* <!-- Ulangi card sebanyak produk yang tersedia --> */}
           </div>
         </section>
-      </main>
+      </div>
     </Layouts>
   );
 };

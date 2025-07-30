@@ -6,7 +6,7 @@ export const Navbar = () => {
     <nav className="w-full  px-4 md:px-16 py-4 flex justify-between  items-center   ">
       <ul className="flex space-x-5 text-base ">
         <li>
-          <Link to="">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="">Chart (0)</Link>
@@ -24,7 +24,7 @@ export const Navbar = () => {
           <Link to="">Search</Link>
         </li>
         <li>
-          <Link to="">Sign In</Link>
+          <Link to="/Login">Sign In</Link>
         </li>
       </ul>
     </nav>
