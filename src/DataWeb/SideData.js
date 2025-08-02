@@ -10,6 +10,13 @@ import model_1 from "../assets/model(1).png";
 import model_2 from "../assets/model(2).png";
 import model_3 from "../assets/model(3).png";
 import model_4 from "../assets/model(4).png";
+import modelAbout1 from "../assets/modelAbout1.png";
+import modelAbout2 from "../assets/modelAbout2.png";
+import modelAbout3 from "../assets/modelAbout3.png";
+import modelAbout4 from "../assets/modelAbout4.png";
+import barchart from "../assets/bar-chart.png"
+import wallet from "../assets/wallet.png"
+import antiage from "../assets/anti-age.svg"
 
  const siteData =  {
     ProdukBestseller : [
@@ -101,6 +108,25 @@ import model_4 from "../assets/model(4).png";
         {id:5, category:"Oil Skin"},
         {id:6, category:"Normal Skin"}
   
+      ],
+      AboutSection: [
+          {id:1, gambar:modelAbout1},
+          {id:2, gambar:modelAbout2},
+          {id:3, gambar:modelAbout2},
+          {id:4, gambar:modelAbout2},
+          {id:5, gambar:modelAbout3},
+          {id:6, gambar:modelAbout4}
+      ],
+      PargrafAbout: [
+        {id:1, text:"Many people do not have access to proper skin care products and education."},
+        {id:2, text:"Our mission goes beyond surface beauty — we’re committed to helping communities embrace self-care as a form of self-worth. We see skincare as a daily act of dignity, healing, and confidence-building, and we want to make that accessible for everyone."},
+        {id:3, text:" Together with local communities and organizations, we expand our impact through skincare education and support programs."},
+        {id:4, text:" Every Arliva product you choose supports the movement to spread awareness and confidence — one small step that means a lot.  "}
+      ],
+      PowerSkincare: [
+         {id:1, icon:antiage, benefit:"Underserved communities, access to basic skincare"},
+         {id:2, icon:barchart, benefit:"Boosts self-confidence and personal well-being"},
+         {id:3, icon:wallet, benefit:"Supports social and economic opportunities "}
       ]
 
   }

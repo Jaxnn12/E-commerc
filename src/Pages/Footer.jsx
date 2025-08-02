@@ -14,7 +14,7 @@ export  const Footer = () => {
           <h3 className="text-base">Company</h3>
           <ul className="space-y-4 text-sm text-gray-text">
             <li>
-              <Link to="">About Us</Link>
+              <Link to="/AboutCompany">About Us</Link>
             </li>
             <li>
               <Link to="/ContactUs">Contact Us</Link>

@@ -7,7 +7,6 @@ export const LoginWithEmail = () => {
       <section className="min-h-screen flex items-center justify-center bg-gray-secondbackground">
         <div className="w-lg bg-white rounded-xl shadow px-10 py-6">
           <h1 className="text-4xl  text-center mb-16">Sign In</h1>
-
           <form className="text-base">
             {/* <!-- Email --> */}
             <label className="block">

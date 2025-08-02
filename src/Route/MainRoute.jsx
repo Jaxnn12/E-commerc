@@ -8,11 +8,13 @@ import { Register } from '../component/Register'
 import { LoginWithTelp } from '../component/LoginWithTelp'
 import { Vertivikasi } from '../component/Vertivikasi'
 import { LoginWithEmail } from '../component/LoginWithEmail'
+import { AboutCompany } from '../component/AboutCompany'
 
 export const MainRoute = () => {
   return (
     <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/AboutCompany' element={<AboutCompany/>}/>
         <Route path='/Category_Produk' element={<CategoryProduk/>}/>
         <Route path='/ContactUs' element={<ContactUs/>}/>
         <Route path='/Login' element={<Login/>}/>
